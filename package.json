@@ -1,1 +1,39 @@
-{     "devDependencies": {         "homebridge-camera-ffmpeg": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-homebridge-camera-ffmpeg",     "homepage": "https://github.com/npmdoc/node-npmdoc-homebridge-camera-ffmpeg",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-homebridge-camera-ffmpeg.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "api documentation for [homebridge-camera-ffmpeg (v0.0.4)](https://github.com/KhaosT/homebridge-camera-ffmpeg#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-homebridge-camera-ffmpeg.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-homebridge-camera-ffmpeg) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-homebridge-camera-ffmpeg.svg)](https://travis-ci.org/npmdoc/node-npmdoc-homebridge-camera-ffmpeg)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "homebridge-camera-ffmpeg": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-homebridge-camera-ffmpeg",
+    "keywords": [
+        "documentation",
+        "homebridge-camera-ffmpeg"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_homebridge_camera_ffmpeg.js",
+    "name": "npmdoc-homebridge-camera-ffmpeg",
+    "nameAlias": "npmdoc_homebridge_camera_ffmpeg",
+    "nameOriginal": "npmdoc-homebridge-camera-ffmpeg",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-homebridge-camera-ffmpeg.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
