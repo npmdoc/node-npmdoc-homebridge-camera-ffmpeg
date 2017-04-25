@@ -1,4 +1,7 @@
-# api documentation for  [homebridge-camera-ffmpeg (v0.0.4)](https://github.com/KhaosT/homebridge-camera-ffmpeg#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-homebridge-camera-ffmpeg.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-homebridge-camera-ffmpeg) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-homebridge-camera-ffmpeg.svg)](https://travis-ci.org/npmdoc/node-npmdoc-homebridge-camera-ffmpeg)
+# npmdoc-homebridge-camera-ffmpeg
+
+#### basic api documentation for  [homebridge-camera-ffmpeg (v0.0.4)](https://github.com/KhaosT/homebridge-camera-ffmpeg#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-homebridge-camera-ffmpeg.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-homebridge-camera-ffmpeg) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-homebridge-camera-ffmpeg.svg)](https://travis-ci.org/npmdoc/node-npmdoc-homebridge-camera-ffmpeg)
+
 #### ffmpeg plugin for homebridge: https://github.com/nfarina/homebridge
 
 [![NPM](https://nodei.co/npm/homebridge-camera-ffmpeg.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/homebridge-camera-ffmpeg)
@@ -53,7 +56,8 @@
         "url": "git://github.com/KhaosT/homebridge-camera-ffmpeg.git"
     },
     "scripts": {},
-    "version": "0.0.4"
+    "version": "0.0.4",
+    "bin": {}
 }
 ```
 
