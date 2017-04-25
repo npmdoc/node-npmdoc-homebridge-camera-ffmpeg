@@ -72,15 +72,6 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.homebridge-camera-ffmpeg.toString">
-            function <span class="apidocSignatureSpan">homebridge-camera-ffmpeg.</span>toString
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-        <li>
-
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">homebridge-camera-ffmpeg.</span>ffmpeg</span>
 
         </li>
@@ -94,19 +85,6 @@
             <a class="apidocElementLiA" href="#apidoc.element.homebridge-camera-ffmpeg.ffmpeg.FFMPEG">
             function <span class="apidocSignatureSpan">homebridge-camera-ffmpeg.ffmpeg.</span>FFMPEG
             <span class="apidocSignatureSpan">(hap, ffmpegOpt)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.homebridge-camera-ffmpeg.toString">module homebridge-camera-ffmpeg.toString</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.homebridge-camera-ffmpeg.toString.toString">
-            function <span class="apidocSignatureSpan">homebridge-camera-ffmpeg.</span>toString
-            <span class="apidocSignatureSpan">()</span>
             </a>
 
         </li>
@@ -134,41 +112,6 @@
   homebridge.registerPlatform(&#x22;homebridge-camera-ffmpeg&#x22;, &#x22;Camera-ffmpeg&#x22;, ffmpegPlatform, true);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.homebridge-camera-ffmpeg.toString" id="apidoc.element.homebridge-camera-ffmpeg.toString">
-        function <span class="apidocSignatureSpan">homebridge-camera-ffmpeg.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return text;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-      bitrate = videoInfo[&#x22;max_bit_rate&#x22;];
-    }
-
-    let targetAddress = sessionInfo[&#x22;address&#x22;];
-    let targetVideoPort = sessionInfo[&#x22;video_port&#x22;];
-    let videoKey = sessionInfo[&#x22;video_srtp&#x22;];
-
-    let ffmpegCommand = this.ffmpegSource + &#x27; -threads 0 -vcodec libx264 -an -pix_fmt yuv420p -r &#x27;+ fps +&#x27; -f rawvideo
- -tune zerolatency -vf scale=&#x27;+ width +&#x27;:&#x27;+ height +&#x27; -b:v &#x27;+ bitrate +&#x27;k -bufsize &#x27;+ bitrate
- +&#x27;k -payload_type 99 -ssrc 1 -f rtp -srtp_out_suite AES_CM_128_HMAC_SHA1_80 -srtp_out_params &#x27;+videoKey.<span class="
-apidocCodeKeywordSpan">toString</span>(&#x27;base64&#x27;)+&#x27; srtp://&#x27;+targetAddress+&#x27;:&#x27;+targetVideoPort+&#x27
-;?rtcpport=&#x27;+targetVideoPort+&#x27;&#x26;localrtcpport=&#x27;+targetVideoPort+&#x27;&#x26;pkt_size=1378&#x27;;
-    console.log(ffmpegCommand);
-    let ffmpeg = spawn(&#x27;ffmpeg&#x27;, ffmpegCommand.split(&#x27; &#x27;), {env: process.env});
-    this.ongoingSessions[sessionIdentifier] = ffmpeg;
-  }
-
-  delete this.pendingSessions[sessionIdentifier];
-} else if (requestType == &#x22;stop&#x22;) {
-...</pre></li>
     </ul>
 
 
@@ -293,44 +236,6 @@ apidocCodeKeywordSpan">toString</span>(&#x27;base64&#x27;)+&#x27; srtp://&#x27;+
   this._createStreamControllers(numberOfStreams, options);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.homebridge-camera-ffmpeg.toString" id="apidoc.module.homebridge-camera-ffmpeg.toString">module homebridge-camera-ffmpeg.toString</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.homebridge-camera-ffmpeg.toString.toString" id="apidoc.element.homebridge-camera-ffmpeg.toString.toString">
-        function <span class="apidocSignatureSpan">homebridge-camera-ffmpeg.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-      bitrate = videoInfo[&#x22;max_bit_rate&#x22;];
-    }
-
-    let targetAddress = sessionInfo[&#x22;address&#x22;];
-    let targetVideoPort = sessionInfo[&#x22;video_port&#x22;];
-    let videoKey = sessionInfo[&#x22;video_srtp&#x22;];
-
-    let ffmpegCommand = this.ffmpegSource + &#x27; -threads 0 -vcodec libx264 -an -pix_fmt yuv420p -r &#x27;+ fps +&#x27; -f rawvideo
- -tune zerolatency -vf scale=&#x27;+ width +&#x27;:&#x27;+ height +&#x27; -b:v &#x27;+ bitrate +&#x27;k -bufsize &#x27;+ bitrate
- +&#x27;k -payload_type 99 -ssrc 1 -f rtp -srtp_out_suite AES_CM_128_HMAC_SHA1_80 -srtp_out_params &#x27;+videoKey.<span class="
-apidocCodeKeywordSpan">toString</span>(&#x27;base64&#x27;)+&#x27; srtp://&#x27;+targetAddress+&#x27;:&#x27;+targetVideoPort+&#x27
-;?rtcpport=&#x27;+targetVideoPort+&#x27;&#x26;localrtcpport=&#x27;+targetVideoPort+&#x27;&#x26;pkt_size=1378&#x27;;
-    console.log(ffmpegCommand);
-    let ffmpeg = spawn(&#x27;ffmpeg&#x27;, ffmpegCommand.split(&#x27; &#x27;), {env: process.env});
-    this.ongoingSessions[sessionIdentifier] = ffmpeg;
-  }
-
-  delete this.pendingSessions[sessionIdentifier];
-} else if (requestType == &#x22;stop&#x22;) {
-...</pre></li>
     </ul>
 
 
